@@ -1,0 +1,193 @@
+/************************Barra social************************/
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+
+	}
+	.social ul li{
+		height: 60px;
+		width: 80px;
+		
+	}
+
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 30px 35px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+ 
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 40px 70px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+ 
+
+   /* el formulario en si mismo */
+  .formulariodemo {
+    background-color: #408080;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #408080 inset;
+    margin: 0 auto;
+    padding: 15px;
+    width: 450px;
+  }
+
+   /* la caja donde se ingresa el texto a buscar */
+  .formulariodemo input {
+    background-color: #EEE;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    float: left;
+    font-family: Tahoma;font-size:15px;font-weight: bold;
+    height: 20px;
+    padding: 10px 5px;
+    width: 330px;
+  }
+  .formulariodemo input:focus {
+    outline: 0;
+    background: #FFF;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+  }
+
+  /* el estilo de del atributo placeholder debe ser declarado para cada navegador de modo separado */
+  .formulariodemo input:-moz-placeholder { color: #999; font-weight: normal; font-style: italic; }
+  .formulariodemo input::-webkit-input-placeholder { color: #999; font-weight: normal; font-style: italic; }
+  .formulariodemo input:-ms-input-placeholder { color: #999; font-weight: normal; font-style: italic; }
+
+  /* aquí iría el estilo de del atributo required si es que se desea definirlo */
+  .formulariodemo input:required { box-shadow: none; }
+
+   /* el botón de envio */
+  .formulariodemo button {
+    background-color: #9099A1;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    color: #FFF;
+    cursor: pointer;
+    float: right;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    width: 110px;
+  }
+  .formulariodemo button:hover{ background: #E54040; } 
+  .formulariodemo button:active, .formulariodemo button:focus{ background: #C42F2F; }
+  .formulariodemo button:before { /* el detalle del triángulo izquierdo */
+    content: "";
+    border-color: transparent #9099A1 transparent;
+    border-style: solid solid solid none;
+    border-width: 8px 8px 8px 0;
+    left: -6px;
+    position: absolute;
+    top: 12px;
+  }
+  .formulariodemo button:hover:before { border-right-color: #E54040; }
+  .formulariodemo button:focus:before { border-right-color: #C42F2F; }   
+  /******************contenedor*****************************/
+ .contenedor {
+    margin: 40px 10px 10px 40px;
+    width: 850px;  /* Ancho del contenedor */
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+
+.contenedor input {
+height: 32px;
+visibility: hidden;
+}
+
+.contenedor label {
+float: left;
+cursor: pointer;
+font-size: 15px;  /* Tamaño del texto de las pestañas */
+line-height: 40px;
+height: 40px;
+padding: 0 20px;
+display: block;
+color: #888;  /* Color del texto de las pestañas */
+text-align: center;
+border-radius: 5px 5px 0 0;
+background: #eee;  /* Fondo de las pestañas */
+margin-right: 5px;
+}
+
+.contenedor input:hover + label {
+background: #ddd;  /* Fondo de las pestañas al pasar el cursor por encima */
+color: #666;  /* Color del texto de las pestañas al pasar el cursor por encima */
+}
+
+.contenedor input:checked + label {
+background: #8ed0f0;  /* Fondo de las pestañas al presionar */
+color: #444; /* Color de las pestañas al presionar */
+z-index: 6;
+line-height: 45px;
+height: 45px;
+position: relative;
+top: -5px;
+-webkit-transition: .1s;
+-moz-transition: .1s;
+-o-transition: .1s;
+-ms-transition: .1s;
+}
+
+.content {
+background: #dadbdc;  /* Fondo del contenido */
+position: relative;
+width: 100%;
+height: 150px;  /* Alto del contenido */
+padding: 30px;
+z-index: 5;
+border-radius: 0 5px 5px 5px;
+}
+
+.content div {
+position: absolute;
+z-index: -100;
+opacity: 0;
+transition: all linear 0.1s;
+}
+
+.contenedor input.tab-selector-1:checked ~ .content .content-1,
+.contenedor input.tab-selector-2:checked ~ .content .content-2,
+.contenedor input.tab-selector-3:checked ~ .content .content-3,
+.contenedor input.tab-selector-4:checked ~ .content .content-4,
+.contenedor input.tab-selector-5:checked ~ .content .content-5,
+.contenedor input.tab-selector-6:checked ~ .content .content-6,
+.contenedor input.tab-selector-7:checked ~ .content .content-7,
+.contenedor input.tab-selector-8:checked ~ .content .content-8,
+.contenedor input.tab-selector-9:checked ~ .content .content-9,
+.contenedor input.tab-selector-10:checked ~ .content .content-10
+{
+    z-index: 100;
+    position:left;
+    opacity: 1;
+    -webkit-transition: all ease-out 0.2s 0.1s;
+-moz-transition: all ease-out 0.2s 0.1s;
+-o-transition: all ease-out 0.2s 0.1s;
+-ms-transition: all ease-out 0.2s 0.1s;
+}

@@ -1,0 +1,241 @@
+@CHARSET "UTF-8";
+/* Propiedades globales no tocar no modificar -_-' ======================================================== */
+body,html,u, ul{
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+    vertical-align: top; }
+
+html {
+	width:100%;
+}
+body {
+	font-family:serif , Helvetica, sans-serif;
+	font-size:100%;
+	color:#4c4c4c;
+	min-width:980px;
+	background:#eee;
+}
+.main {
+	width:980px; 	
+	padding:0;
+	margin:0 auto;
+	font-size:0.875em;
+	line-height:1.714em;
+	position:relative;
+}
+.Relleno {
+	width:100%; 
+	overflow:hidden; 
+	position:relative;
+}
+.menu li a,
+.pagination li a,
+h1 a {text-decoration:none;}	
+
+/********************************Encabezado*************************************/
+
+.Menu-top {
+	width:100%;
+	padding:30px 0 25px 0;
+	background:url(../images/header-tail.png) center top repeat;
+}
+.menu-barra {
+	width:100%;
+	padding:0;
+	border-bottom:1px solid #fff;
+	background:url(../images/menu-row-tail.gif) center top repeat-x #e6e6e6;
+	font-size: 100%;
+    vertical-align: top;
+    border-collapse:collapse;
+}
+.menu-borde {
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	
+}
+
+h1 {
+	padding:0 0 0 40px; 
+	float:left;
+}
+	h1 a {
+		display:block; 
+		width:319px;
+		height:110px;
+		text-indent:-6000px;
+		background:url(../images/logo.png) 0 0 no-repeat;
+	}
+	
+/***** menu *****/
+.menu {
+	width:100%;
+	min-height:58px;
+	overflow:hidden;
+	background:url(../images/menu-spacer.gif) left top no-repeat;
+}
+.menu li {
+	float:left; 
+	position:relative;
+	background:url(../images/menu-spacer.gif) right top no-repeat;
+}
+.menu li a {
+	display:block; 
+	font-family:  cursive ;
+	font-size:20px; 
+	line-height:2.5em; 
+	letter-spacing:-1px;
+	padding:5px 44px 4px 40px; 
+	color:#000; 
+}
+.menu > li:first-child > a {padding:5px 44px 4px 45px;}
+.menu li.last a {padding:5px 47px 4px 40px;}
+.menu li a.active,
+.menu li a:hover {color:#0E88B5;}
+
+/*****BG-slider*****/
+
+.pagination { 
+	float:right; 
+	padding:14px 40px 0 0;
+}
+	.pagination li { 
+		float:left;
+		padding-left:5px;
+	}
+		.pagination li a { 
+			font-family:"Times New Roman", Times, serif;
+			font-style:italic;
+			font-weight:bold;
+			display:block; 
+			background:url(../images/bg-slider-pagination.png) right top no-repeat;
+			width:35px; 
+			height:35px;
+			font-size:26px;
+			line-height:1.2em;
+			text-align:center;
+			color:#000;
+		}
+		.pagination a:hover, 
+		.pagination .current a {background-position:left top; color:#fff;}
+.top-text {
+	display:block;
+	font-family: cursive , serif;
+	font-size:19px;
+	line-height:2em;
+	font-weight:400;
+	color:#fff;
+	float:right;
+	margin-right:4px;
+	padding-top:12px;
+}
+		
+ol, ul {
+	list-style: none;
+}
+/******************************Contenido*********************************/
+.main-c {
+    font-size: 0.875em;
+    line-height: 1.714em;
+    margin: 10px auto;
+    padding: 0;
+    position: relative;
+    width: 980px;
+    height:550px;
+}
+#contenido {
+    background: rgba(0, 0, 0, 0) url("../images/content-tail.png") repeat scroll left top;
+    padding: 30px 0 43px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height:470px;
+}
+
+/***********************************************/
+#ContactForm {
+	margin:30px 30px 30px 30px;
+	
+}
+
+#ContactForm span {
+	float:left;
+	width:94px;
+	line-height:24px;
+}
+#ContactForm .wrapper {
+	min-height:30px;
+}
+#ContactForm .textarea_box {
+	min-height:182px;
+	width:100%;
+	overflow:hidden;
+}
+
+#ContactForm a {
+	margin-left:10px;
+	float:right;
+}
+#ContactForm .input {
+	width:282px;
+	border:1px solid #e0f0f4;
+	background:#fff;
+	padding:3px 10px;
+	color:#000;
+	font:13px Arial, Helvetica, sans-serif;
+	height:16px;
+	margin:0;
+}
+#ContactForm textarea {
+	overflow:auto;
+	width:462px;
+	border:1px solid #e0f0f4;
+	background:#fff;
+	padding:3px 10px;
+	color:#000;
+	font:13px Arial, Helvetica, sans-serif;
+	height:164px;
+	margin:0px;
+}
+.button {
+	display:inline-block;
+	border:1px solid #e0f0f4;
+	width:90px;
+	text-align:center;
+	font-size:20px;
+	color:#39baf8;
+	line-height:45px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	position:relative;
+	text-decoration:none;
+}
+.button strong {
+	font-weight:normal;
+	border:1px solid #fff;
+	display:block;
+	height:45px;
+	background:url(images/bg_button.gif) top repeat-x #f3fafb;
+	border-radius:10px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	position:relative;
+} 
+.button:hover {
+	color:#000;
+}
+.col1{
+	margin:20px 20px 20px 70px;
+	background:#DFE8EB;
+	border-radius:15px;
+	height:400px;
+}
+#ContactForm img{
+	float:right;
+	margin: 0px 0px 0px 0px;
+}

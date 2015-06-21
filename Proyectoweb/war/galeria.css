@@ -1,0 +1,65 @@
+html{
+	 background: transparent;
+}
+body {
+background:url(images/tr.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+#templatemo_content_right_bottom_section {
+
+ 	line-height: 1.714em;
+    margin: 10px auto;
+   width:980px;
+    
+	background: rgba(0, 0, 0, 0) url("../images/content-tail.png") repeat scroll left top;
+    padding: 30px 0 43px 50px;
+    position: relative;
+   
+    z-index: 1;
+    height:800px;
+}
+
+#templatemo_content_right_bottom_section .templatemo_text_area {
+	
+
+	margin: 0;
+	padding: 20px 0px 20px 10px;
+	
+}
+
+.templatemo_text_area h1 {
+	
+	font-family: Tahoma;
+	font-size:	18px;
+	color: #4c4c4c;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+}
+
+.templatemo_text_area p {
+	
+	font-family: Tahoma;
+	font-size:	12px;
+	text-align: justify;
+	color: #8b8b8b;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+}
+
+.templatemo_text_area img {
+	
+	margin: 0 20px 10px 0;
+	padding: 0;
+	border: 5px solid #ffffff;
+	height:160px;
+	width:160px;
+	
+	
+}
+

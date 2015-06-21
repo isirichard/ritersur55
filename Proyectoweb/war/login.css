@@ -1,0 +1,360 @@
+@CHARSET "UTF-8";
+/* Propiedades globales no tocar no modificar -_-' ======================================================== */
+body,html,u, ul{
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+    vertical-align: top; }
+
+html {
+	width:100%;
+}
+body {
+	font-family:cursive , Helvetica, sans-serif;
+	font-size:100%;
+	color:#4c4c4c;
+	min-width:980px;
+	background:#eee;
+}
+.main {
+	width:980px; 	
+	padding:0;
+	margin:0 auto;
+	font-size:0.875em;
+	line-height:1.714em;
+	position:relative;
+}
+.Relleno {
+	width:100%; 
+	overflow:hidden; 
+	position:relative;
+}
+.menu li a,
+.pagination li a,
+h1 a {text-decoration:none;}	
+
+/********************************Encabezado*************************************/
+
+.Menu-top {
+	width:100%;
+	padding:30px 0 25px 0;
+	background:url(../images/header-tail.png) center top repeat;
+}
+.menu-barra {
+	width:100%;
+	padding:0;
+	border-bottom:1px solid #fff;
+	background:url(../images/menu-row-tail.gif) center top repeat-x #e6e6e6;
+	font-size: 100%;
+    vertical-align: top;
+    border-collapse:collapse;
+}
+.menu-borde {
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	
+}
+
+h1 {
+	padding:0 0 0 40px; 
+	float:left;
+}
+	h1 a {
+		display:block; 
+		width:319px;
+		height:110px;
+		text-indent:-6000px;
+		background:url(../images/logo.png) 0 0 no-repeat;
+	}
+	
+/***** menu *****/
+.menu {
+	width:100%;
+	min-height:58px;
+	overflow:hidden;
+	background:url(../images/menu-spacer.gif) left top no-repeat;
+}
+.menu li {
+	float:left; 
+	position:relative;
+	background:url(../images/menu-spacer.gif) right top no-repeat;
+}
+.menu li a {
+	display:block; 
+	font-family:  cursive ;
+	font-size:20px; 
+	line-height:2.5em; 
+	letter-spacing:-1px;
+	padding:5px 44px 4px 40px; 
+	color:#000; 
+}
+.menu > li:first-child > a {padding:5px 44px 4px 45px;}
+.menu li.last a {padding:5px 47px 4px 40px;}
+.menu li a.active,
+.menu li a:hover {color:#0E88B5;}
+
+/*****BG-slider*****/
+
+.pagination { 
+	float:right; 
+	padding:14px 40px 0 0;
+}
+	.pagination li { 
+		float:left;
+		padding-left:5px;
+	}
+		.pagination li a { 
+			font-family:"Times New Roman", Times, serif;
+			font-style:italic;
+			font-weight:bold;
+			display:block; 
+			background:url(../images/bg-slider-pagination.png) right top no-repeat;
+			width:35px; 
+			height:35px;
+			font-size:26px;
+			line-height:1.2em;
+			text-align:center;
+			color:#000;
+		}
+		.pagination a:hover, 
+		.pagination .current a {background-position:left top; color:#fff;}
+.top-text {
+	display:block;
+	font-family: cursive , serif;
+	font-size:19px;
+	line-height:2em;
+	font-weight:400;
+	color:#fff;
+	float:right;
+	margin-right:4px;
+	padding-top:12px;
+}
+		
+ol, ul {
+	list-style: none;
+}
+/******************************Contenido*********************************/
+.main-c {
+    font-size: 0.875em;
+    line-height: 1.714em;
+    margin: 10px auto;
+    padding: 0;
+    position: relative;
+    width: 980px;
+    height:500px;
+}
+#contenido {
+    background: rgba(0, 0, 0, 0) url("../images/content-tail.png") repeat scroll left top;
+    padding: 30px 0 43px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height:500px;
+}
+ /***********************login********************/
+#form{
+	width:940px;
+	height:600px;
+	
+	margin-left:20px;
+}
+#form-izq{
+	width:540px;
+	height:600px;
+	float:left;
+}
+#form-der{
+	width:350px;
+	height:600px;
+	margin-left:30px;
+	float:left;
+	
+}
+.indent-bot img{
+	display:block;
+	margin-left:100px;
+}
+.indent-left{
+	border-left: 3px solid #D8D8D8;
+}
+.indent-bot2{
+	margin:0px 0px 30px 120px;
+}
+/********************************************/
+
+#text-contac{
+	margin-left:75px;
+}
+.form-ing {
+	margin:27px 0px 0 0px; 
+	width:210px; 
+}
+#form-ing input { 
+	width:188px; 
+	border:#f4f4f4 1px solid; 
+	height:18px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:14px; color:#bebebe;  
+	vertical-align:top; 
+	padding:11px 9px 12px 11px; 
+	display:inline-block; 
+	margin-top:19px;
+}
+.ing_button {
+	background:#f4f4f4; 
+	font-size:14px; 
+	line-height:18px; 
+	color:#01a5ca;  
+	display:inline-block; 
+	padding:12px 28px 13px 28px; 
+	margin:15px 0px 0 30px;
+	text-decoration:none;
+}
+.ing_button:hover {
+	background:#d3d1d1; 
+	color:#333; 
+}
+/**********************************************/
+#wrapper {
+	
+	width: 400px;
+	height: 400px;
+	margin: 0px 0px 0px 20px;
+	
+}
+
+
+/*******************
+LOGIN FORM
+*******************/
+
+.login-form {
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+	z-index:5;
+	
+	background: #f3f3f3;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+}
+
+/*******************
+HEADER
+*******************/
+
+.login-form .header {
+	padding: 20px 30px 30px 150px;
+}
+
+.login-form .header h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height:34px;
+	color: #414848;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	margin-bottom: 10px;
+}
+
+.login-form .header span {
+	font-size: 11px;
+	line-height: 16px;
+	color: #678889;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+
+/*******************
+CONTENT
+*******************/
+
+.login-form .content {
+	padding: 0 30px 25px 20px;
+}
+
+/* Input field */
+.login-form .content .input {
+	width: 188px;
+	padding: 15px 25px;
+	margin:5px auto;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	
+}
+
+/* Second input field */
+.login-form .content .password, .login-form .content .pass-icon {
+	margin-top: 5px;
+}
+
+.login-form .content .input:hover {
+	background: #dfe9ec;
+	color: #414848;
+}
+
+.login-form .content .input:focus {
+	background: #dfe9ec;
+	color: #414848;
+	
+}
+
+
+
+/*******************
+FOOTER
+*******************/
+
+.login-form .pie {
+	padding: 25px 30px 40px 30px;
+	overflow: auto;
+	
+	background: #d4dedf;
+	border-top: 1px solid #fff;
+	
+}
+
+/* Login button */
+.login-form .pie .button {
+	margin:0px 0px 0px 150px;
+	padding: 11px 25px;
+	
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+	
+	background: #56c2e1;
+	border: 1px solid #46b3d3;
+	border-radius: 5px;
+	cursor: pointer;
+	
+}
+
+.login-form .pie .button:hover {
+	background: #3f9db8;
+	border: 1px solid rgba(256,256,256,0.75);
+	
+}
+
+.login-form .pie .button:focus {
+	position: relative;
+	bottom: -1px;
+	
+	background: #56c2e1;
+	
+}
