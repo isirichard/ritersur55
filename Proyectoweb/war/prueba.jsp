@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-COmentario segundo del servidor
-Diego Modificando Prueba
-con Otro modificacion autor y commit Otro comit Comentario del servidor
+Borrando Comentarios
 </body>
 </html>
